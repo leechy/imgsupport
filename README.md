@@ -50,13 +50,13 @@ You can use css-cascade to specify what kind of image your browser must download
 .avif .myelem {
   background-image: url('myimage.avif');
 }
-.webp .myelem {
+.webp.notavif .myelem {
   background-image: url('myimage.webp');
 }
-.jpx .myelem {
+.jpx.notavif.notwebp .myelem {
   background-image: url('myimage.wdp');
 }
-.jp2 .myelem {
+.jp2.notavif.notwebp .myelem {
   background-image: url('myimage.jp2');
 }
 .svg .myelem {
