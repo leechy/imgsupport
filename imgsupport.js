@@ -9,7 +9,7 @@
 			document.documentElement.className += ' ' + className;
 		} else {
 			document.documentElement.className += ' not' + className;
-			if (checkCount == 3 && !formatFound) {
+			if (checkCount == 4 && !formatFound) {
 				if (document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image", "1.1")) {
 					document.documentElement.className += ' svg';
 				} else {
@@ -19,6 +19,12 @@
 		}
 	}
 
+	var AVIF = new Image();
+	AVIF.onload = AVIF.onerror = function () {
+		setHTMLClass(AVIF.height, 'avif');
+	}
+	AVIF.src = 'data:image/avif;base64,AAAAIGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZk1BMUEAAADybWV0YQAAAAAAAAAoaGRscgAAAAAAAAAAcGljdAAAAAAAAAAAAAAAAGxpYmF2aWYAAAAADnBpdG0AAAAAAAEAAAAeaWxvYwAAAABEAAABAAEAAAABAAABGgAAAF0AAAAoaWluZgAAAAAAAQAAABppbmZlAgAAAAABAABhdjAxQ29sb3IAAAAAamlwcnAAAABLaXBjbwAAABRpc3BlAAAAAAAAAAIAAAACAAAAEHBpeGkAAAAAAwgICAAAAAxhdjFDgS0AAAAAABNjb2xybmNseAACAAIAAIAAAAAXaXBtYQAAAAAAAAABAAEEAQKDBAAAAGVtZGF0EgAKBzgAPtAgIAkyUBAAAPWc41TP///4gHBX9H8XVK7gGeDllq8TYARA+8Tfsv7L+zPE24eIoIzE0WhHbrqcrTK9VEgEG/hwgB5rdCbvP8g3KYPdV88CvPJnptgQ';
+	
 	var WebP = new Image();
 	WebP.onload = WebP.onerror = function() {
 		setHTMLClass(WebP.height, 'webp');
