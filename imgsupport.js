@@ -28,8 +28,7 @@
   JXL.onload = JXL.onerror = function () {
     setHTMLClass(JXL.height, "jxl");
   };
-  JXL.src =
-    "data:image/jxl;base64,/woIELASCAgQAFwASxLFgkWAHL0xqnCBCV0qDp901Te/5QM=";
+  JXL.src = "data:image/jxl;base64,/woIAAAMABKIAgC4AF3lEgAAFSqjjBu8nOv58kOHxbSN6wxttW1hSaLIODZJJ3BIEkkaoCUzGM6qJAE=";
 
   var AVIF = new Image();
   AVIF.onload = AVIF.onerror = function () {
