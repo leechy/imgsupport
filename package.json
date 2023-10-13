@@ -1,0 +1,17 @@
+{
+	"name": "imgsupport",
+	"version": "0.2.0",
+	"description": "Detecting support for JPEG XL, AVIF, WebP, JPEG 2000, JPEG XR, and SVG to supply the best image for the UA",
+	"author": {
+		"name": "Andreyka Lechev",
+		"email": "leechy@leechy.ru",
+		"url": "http://www.leechy.ru"
+	},
+	"license": "MIT",
+	"homepage": "https://github.com/leechy/imgsupport",
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:leechy/imgsupport.git"
+	},
+	"main": "./imgsupport.js"
+}
