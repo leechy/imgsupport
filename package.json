@@ -1,6 +1,6 @@
 {
 	"name": "imgsupport",
-	"version": "0.2.0",
+	"version": "0.2.1",
 	"description": "Detecting support for JPEG XL, AVIF, WebP, JPEG 2000, JPEG XR, and SVG to supply the best image for the UA",
 	"author": {
 		"name": "Andreyka Lechev",
